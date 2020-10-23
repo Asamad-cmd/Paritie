@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- FontAwesome -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://kit.fontawesome.com/7a02d46a04.js" crossorigin="anonymous"></script>
+         <!-- Google font -->
+         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+          <!-- OwlCarousel -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+
+      <!-- JQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+     <!-- Custom css -->
+     <link href="css/sign-up.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">
+                <i class="fas fa-hotel"></i>
+                <span>Paritie</span>
+                <span>Hotel</span>
+            </a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="#" class="active">User&nbsp;<i class="fa fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="#">Admin&nbsp;<i class="fa fa-caret-right"></i></a>
+                        <ul>
+                            <li><a href="admin-login.html">Login</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Customer&nbsp;<i class="fa fa-caret-right"></i></a>
+                        <ul>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="sign-up.html">Sign Up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="box">
+        <h2>Sign Up</h2>
+        <form action="/welcome-page.html">
+            <div class="inputBox">
+
+                <table cellpadding="15">
+                    <tr>
+                        <td><label>Title:</label></td>
+                        <td colspan="3" style="display:flex; width: 100%;"> 
+                            <div style="display:flex; width: 100%;">
+                                <label for="male">Mr.</label>
+                                <input type="radio" id="male" name="gender" value="male">
+                            </div>
+                            <div style="display:flex; width: 100%;">
+                                <label for="female">Ms.</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                            </div>
+                            <div style="display:flex; width: 100%;">
+                                <label for="male/female">Dr.</label>
+                                <input type="radio" id="male/female" name="gender" value="female">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Firstname:</label></td>
+                        <td><input type="text" name="" placeholder="first name.." required=""></td>
+                        <td><label>Lastname:</label></td>
+                        <td><input type="text" name="" placeholder="last name.." required=""></td>                        
+                    </tr>
+                    
+                    <tr>
+                        <td><label>Username:</label></td>
+                        <td><input type="text" name="" placeholder="username.." required=""></td>
+                        <td><label>Address:</label></td>
+                        <td><input type="address" name="" placeholder="address.." required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email:</label></td>
+                        <td><input type="email" name="" placeholder="email.." required=""></td>
+                        <td><label>Confirm email:</label></td>
+                        <td><input type="text" name="" placeholder="confirm email.." required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label>Phone Numer:</label></td>
+                        <td><input type="text" name="" placeholder="phone number.." required=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password:</label></td>
+                        <td><input type="password" name="" placeholder="password.." required=""></td>
+                        <td><label>Confirm password:</label></td>
+                        <td><input type="text" name="" placeholder="confirm password.." required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label>Date of registration:</label></td>
+                        <td>
+                            <input type="datetime-local" id="send" oninput="result.value=send.value" required=""><br><br>
+                            <input type="text" placeholder="date&time result.." id="result">
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="4">
+                            <div style="display:flex;  ">
+                                <input type="checkbox">
+                                Email me for great deals and offer and information about hotel.
+                            </div>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="4"></p>
+                            <p>
+                            By signing up, you accept the <a href="">Terms & Conditions</a> and <a href="">Privacy Statement</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td colspan="4">
+                                <div style="border-top: 3px solid #03a9f4; padding-top: 20px;">
+                                    <input type="submit" name="" value="Create account" onclick="alert('Confirm Submittion')">
+                                </div>
+                            </td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+
+    
+    <!-- Footer -->
+    <footer>
+        <div class="upper-section">
+            <a href="#">Your Account</a>
+            <a href="#">Make change online to your booking</a>
+            <a href="#">Contact Customer Service</a>
+        </div>
+        <div class="down-section">
+            <ul>
+                <li>
+                    <div class="logo">
+                        <a href="#">
+                            <i class="fas fa-hotel"></i>
+                            <span>Paritie</span>
+                            <span>Hotel</span>
+                        </a>
+                    </div>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

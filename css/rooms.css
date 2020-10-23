@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    letter-spacing: 0px;
+}
+body{
+    margin: 0 10%;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #ccc;
+}
+/* first-navbar */
+nav{
+    background:rgb(54,74,46);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 5px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+    z-index: 2;
+}
+
+nav ul{
+    float: right;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    line-height: 50px;
+    color: rgb(133, 240, 213);
+    padding: 8px 20px;
+    border: solid #000;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav ul li a.active, nav ul li a:hover{
+    background: repeating-linear-gradient(45deg, rgb(25, 149, 221) 50%, rgb(48, 179, 102));
+    border-radius: 10px; 
+    color: #ffffff;   
+}
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 22%;
+    padding: 5px;
+    text-align: center;
+    background:rgb(54,74,46);
+}
+nav ul li:hover> ul{
+    display: inline-block;
+}
+nav ul ul li{
+    display: list-item;
+    float: none;
+    
+}
+nav ul ul li a{
+    margin: 0;
+}
+nav ul ul li:first-child ul{
+    top: 0px;
+    right: -82px;
+}
+nav ul ul ul{
+    right: -101px;
+}
+
+/* Nav black */
+nav.black{
+    background:rgb(54,74,46);
+}
+nav.black .logo ul{
+    background: transparent;
+}
+nav.black ul li a{
+    line-height: 50px;
+    padding: 8px 20px;
+    color:  #85f0d5;
+}
+nav.black ul ul{
+    background:rgb(54,74,46);
+}
+nav.black .logo a{
+    float: left;
+    transition: .5s;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+nav .logo{
+}
+nav .logo a{    
+    background: repeating-linear-gradient(45deg, rgb(25, 149, 221) 50%, rgb(48, 179, 102));    
+    text-shadow: 0 0 3px #4b1083, 0 0 3px #7bff00, 0 0 3px #00ffdd;
+    border-radius: 50px 2px 50px 3px;
+    text-decoration: none;
+    font-weight: 900;
+    line-height: 60px;
+    position: absolute;
+    padding: 0;
+    font-size: 25px;
+}
+nav .logo a span:first-child{
+    color: rgba(25, 149, 221, 0.781);  
+}
+nav .logo a span:last-child{
+    color: rgb(9, 255, 0);    
+}
+
+/* end of first-navbar */
+
+/* second-navbar */
+.second-navbar{
+    background:rgb(54,74,46);
+    margin: 25vh 0 8vh 25%;
+    width: 55%;
+    height: auto;
+    box-sizing: border-box;
+    transition: .5s;
+    text-align: right;
+}
+.second-navbar ul{
+    justify-content: space-around;
+    margin-left: -40px;
+    line-height: 60px;
+    display: flex;
+}
+.second-navbar ul li{
+    list-style: none;
+    border-right: 2px solid rgb(62, 80, 57);
+}
+.second-navbar ul li:last-child{
+    border: transparent;
+}
+.second-navbar ul li a{
+    color:rgb(25, 149, 221);
+    border: solid #000;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.second-navbar ul li a.active, .second-navbar ul li a:hover{
+    background: repeating-linear-gradient(45deg, rgb(17, 95, 139) 50%, rgb(35, 105, 66));
+    color: #ffffff;   
+}
+/* End of second-navbar */
+
+/* Paritie Rooms */
+.paritie-rooms div:nth-child(2){
+    margin-top: 10vh 20vh;
+    background: linear-gradient(rgb(54,74,46), rgb(144, 187, 127),rgb(144, 187, 127),rgb(144, 187, 127),rgb(54,74,46));
+}
+.room-head{
+    margin-top: 80px;
+}
+.room-head div:first-child{
+    text-align: center;
+    line-height: 0;
+}
+/* gallery */
+
+.gallery h1{
+    text-align: center;
+}
+.gallery .images{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.gallery .images img{
+    width: 245px;
+    height: 170px;
+    margin: 3px;
+}
+.gallery .images a:last-child{
+    background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.541)), url(https://www.intechnic.com/hubfs/Imported_Blog_Media/Best-Hotel-Website-Designs-SMALL-3.jpg);
+    background-size: cover;
+    position: relative;
+    bottom: 50%;
+    font-family: poppins;
+    color: #fff;
+    text-decoration: none;   
+    width: 245px;
+    height: 170px;
+
+}
+.gallery .images a span {    
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.gallery .images a span p{
+    margin-top: 50%;    
+}
+.gallery .images a:last-child:hover{
+    color: #e5823b;
+}
+/* end of gallery */
+.paragraph{
+    /* background: repeating-linear-gradient(45deg, rgba(180, 179, 179, 0.76)50%, rgba(184, 219, 215, 0.541),rgba(49, 68, 41, 0.637)); */
+    font-family: sans-serif;
+}
+.paragraph div p{
+    margin: 30px;
+    letter-spacing: 0;
+    text-indent: 2rem;
+}
+.paragraph div p::first-letter{
+}
+
+/* section */
+/* Availability */
+.availability{
+    margin-top: 80px;
+}
+.availability:first-child{
+    text-align: center;
+    line-height: 0;
+}
+.avalability-check{
+    display: flex;
+    background: linear-gradient(rgb(54,74,46), rgb(144, 187, 127),rgb(144, 187, 127),rgb(144, 187, 127),rgb(54,74,46));
+    margin-top: 10vh;
+    padding: 40px;
+    justify-content: space-around;
+    border-radius: 50px;
+}
+
+.avalability-check .empty{
+    border-right: 5px solid  rgb(62, 80, 57);
+}
+.avalability-check div{
+    /* font-size: 0.1rem; */
+    font-family: 'Poppins', sans-serif;
+}
+.avalability-check div span select{
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.avalability-check .guest span select:hover{
+    background: rgb(62, 80, 57);
+    color: #fff;
+}
+.avalability-check .guest span:first-child select{
+    margin-left: 40px;
+}
+.avalability-check .input input{
+    padding: 10px;
+    margin-top: 7vh;
+    background: linear-gradient(15deg, rgb(25, 149, 221), rgb(48, 179, 102),rgb(54,74,46), rgb(144, 187, 127));  
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    font-family: 'Roboto', sans-serif;
+}
+.avalability-check .input input:hover{
+    border: solid rgb(62, 80, 57);
+    padding: 12px;
+}
+
+/* Availability table */
+.availability-table-head{
+    margin-top: 100px;
+    text-align: center;
+}
+/* .availability-check-table{
+    background: linear-gradient(rgb(54,74,46), rgb(144, 187, 127),rgb(144, 187, 127),rgb(144, 187, 127),rgb(54,74,46));
+    font-family: 'poppins' sans-serif;
+    border: solid rgb(62, 80, 57);
+    border-radius: 50px;
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+}
+.availability-table table thead {
+    border: solid rgb(62, 80, 57);
+    border-radius: 50px;
+    font-weight: bold;
+}
+.availability-table table tbody tr:first-child td:first-child i, 
+.availability-table table tbody tr:first-child td:nth-child(2){
+    text-align: center;
+    font-size: 27px;
+    color: rgb(62, 80, 57);
+}
+.availability-table table tbody tr:first-child td:first-child select{
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+.availability-table table tbody tr:first-child td:first-child select:hover{
+    background: rgb(62, 80, 57);
+    color: #fff;
+} */
+
+/* facilities */
+.facilities{    
+    margin-top: 200px;
+}
+.facilities div h1, 
+.facilities div h3, 
+.facilities div h3, 
+.popular-facilities{
+    text-align: center;
+}
+.facilities div:nth-child(2){
+    margin-top: 50px;
+}
+.popular-facilities{
+    margin-top: 50px;
+    background: rgba(166, 233, 122, 0.76);
+}
+.popular-facilities span{
+    margin-top: 100px;
+}
+.popular-facilities span i{
+    margin: 15px;
+    color:  rgba(29, 63, 7, 0.76);
+}
+ .hotel-facilities{
+     display: flex;
+     margin-top: 0px;
+     justify-content: space-evenly;
+     background: rgba(29, 63, 7, 0.76);
+ }
+ .hotel-facilities div ul li ul{
+     margin-left: -40px;
+}
+
+/* house-rules */
+.house-rules{
+    background: rgba(29, 63, 7, 0.76);
+
+}
+.house-rules .paragragh{   
+    margin-top: 50px;
+    background: rgba(166, 233, 122, 0.76);
+    font-size: 1rem; 
+}
+.house-rules table{
+   width: 100%;
+}
+
+/* Footer */
+footer{ 
+}
+/* upper section */
+footer .upper-section{
+    background: rgba(166, 233, 122, 0.76);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25vh;
+    padding: 20px;
+}
+footer .upper-section a{
+    text-decoration: none;
+    color: black;
+    font-family: 'poppins' sans-serif;
+    font-size: 1.5rem;
+    transition: .5s ease;
+}
+footer .upper-section a:hover{
+    border-bottom: 5px solid rgba(29, 63, 7, 0.76);
+    color: #03a9f4;
+}
+/* Down section */
+
+footer .down-section {
+    background: rgba(29, 63, 7, 0.76);
+    margin-top: -3vh;
+    padding: 20px;
+
+}
+footer .down-section ul{
+    display: flex;
+    justify-content: space-around;
+}
+footer .down-section ul li{
+    list-style: none;
+    line-height: 40px;
+}
+footer .down-section ul li a{
+    text-decoration: none;
+    transition: .3s ease;
+    color: black;
+}
+footer .down-section ul li a:hover{
+    border-bottom: solid rgba(29, 63, 7, 0.76);
+    color:  #03a9f4;
+}
+
+
+/* down section logo */
+footer .down-section ul li .logo a{
+    background: repeating-linear-gradient(45deg, rgb(25, 149, 221) 50%, rgb(48, 179, 102));    
+    text-shadow: 0 0 3px #4b1083, 0 0 3px #7bff00, 0 0 3px #00ffdd;
+    border-radius: 50px 2px 50px 3px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    font-size: 25px;
+}
+footer .down-section ul li .logo a span:first-child{
+    color: rgba(25, 149, 221, 0.781);  
+}
+footer .down-section ul li .logo a span:last-child{
+    color: rgb(9, 255, 0);    
+}

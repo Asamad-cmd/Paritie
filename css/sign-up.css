@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://digital.ihg.com/is/image/ihg/intercontinental-san-salvador-3998644469-2x1?fit=fit,1&wid=2400&hei=1200&qlt=85,0&resMode=sharp2&op_usm=1.75,0.9,2,0);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250vh;
+    margin: 0 10%;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* first-navbar */
+nav{
+    background:rgb(54,74,46);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 5px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+    z-index: 2;
+}
+
+nav ul{
+    float: right;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    line-height: 50px;
+    color: rgb(133, 240, 213);
+    padding: 8px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav ul li a.active, nav ul li a:hover{
+    background: repeating-linear-gradient(45deg, rgb(25, 149, 221) 50%, rgb(48, 179, 102));
+    border-radius: 10px; 
+    color: #ffffff;   
+}
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 22%;
+    padding: 5px;
+    text-align: center;
+    background:rgb(54,74,46);
+}
+nav ul li:hover> ul{
+    display: inline-block;
+}
+nav ul ul li{
+    display: list-item;
+    float: none;
+    
+}
+nav ul ul li a{
+    margin: 0;
+}
+nav ul ul li:first-child ul{
+    top: 0px;
+    right: -82px;
+}
+nav ul ul ul{
+    right: -101px;
+}
+
+/* Nav black */
+nav.black{
+    background:rgb(54,74,46);
+}
+nav.black .logo ul{
+    background: transparent;
+}
+nav.black ul li a{
+    line-height: 50px;
+    padding: 8px 20px;
+    color:  #85f0d5;
+}
+nav.black ul ul{
+    background:rgb(54,74,46);
+}
+nav.black .logo a{
+    float: left;
+    transition: .5s;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+nav .logo{
+}
+nav .logo a{    
+    background: repeating-linear-gradient(45deg, rgb(25, 149, 221) 50%, rgb(48, 179, 102));    
+    text-shadow: 0 0 3px #4b1083, 0 0 3px #7bff00, 0 0 3px #00ffdd;
+    border-radius: 50px 2px 50px 3px;
+    text-decoration: none;
+    font-weight: 900;
+    line-height: 60px;
+    position: absolute;
+    padding: 0;
+    font-size: 25px;
+}
+nav .logo a span:first-child{
+    color: rgba(25, 149, 221, 0.781);  
+}
+nav .logo a span:last-child{
+    color: rgb(9, 255, 0);    
+}
+
+/* end of first-navbar */
+
+
+.box
+{
+	position: relative;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-30%);
+	width: 90%;
+	padding: 40px;
+	background: rgba(0,0,0,.8);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+.box h2
+{
+	margin: 0 0 30px;
+	padding: 0;
+	text-align: center;
+    color: #03a9f4;
+    border-bottom: 3px solid #03a9f4;
+}
+
+.box .inputBox table{
+    width: 100%;
+	color: #fff;
+    padding: 0;
+}
+
+.box .inputBox table a{
+    color: #03a9f4;
+    padding: 5px 10px;
+}
+
+.box .inputBox table input{
+    width: 100%;
+    padding: 10px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.box .inputBox table input::placeholder{
+    letter-spacing: 1px;
+    font-style: oblique;
+    opacity: 1;
+}
+.box .inputBox table input[type="submit"]
+{
+    background: transparent;
+    border: none;
+	outline: none; color: #fff;
+	background: #03a9f4;
+    padding: 10px 5%;
+    width: 40%;
+    margin-left: 30%;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.box .inputBox table input[type="radio"],
+.box .inputBox table input[type="checkbox"]{
+    width: 30px;
+}
+
+
+
+/* Footer */
+footer{ 
+    width: 100%;
+    margin-top: 69vh;    
+}
+/* upper section */
+footer .upper-section{
+    background: rgba(166, 233, 122, 0.76);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25vh;
+    padding: 20px;
+}
+footer .upper-section a{
+    text-decoration: none;
+    color: black;
+    font-family: 'poppins' sans-serif;
+    font-size: 1.5rem;
+    transition: .5s ease;
+}
+footer .upper-section a:hover{
+    border-bottom: 5px solid rgba(29, 63, 7, 0.76);
+    color:  #03a9f4;
+}
+
+/* Down section */
+footer .down-section {
+    background: rgba(29, 63, 7, 0.76);
+    margin-top: -3vh;
+    padding: 20px;
+
+}
+footer .down-section ul{
+    display: flex;
+    justify-content: space-around;
+}
+footer .down-section ul li{
+    list-style: none;
+    line-height: 40px;
+}
+footer .down-section ul li a{
+    text-decoration: none;
+    transition: .3s ease;
+    color: black;
+}
+footer .down-section ul li a:hover{
+    border-bottom: solid rgba(29, 63, 7, 0.76);
+    color:  #03a9f4;
+}
+
+
+/* down section logo */
+footer .down-section ul li .logo a{
+    background: repeating-linear-gradient(45deg, rgb(25, 149, 221) 50%, rgb(48, 179, 102));    
+    text-shadow: 0 0 3px #4b1083, 0 0 3px #7bff00, 0 0 3px #00ffdd;
+    border-radius: 50px 2px 50px 3px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0;
+    font-size: 25px;
+}
+footer .down-section ul li .logo a span:first-child{
+    color: rgba(25, 149, 221, 0.781);  
+}
+footer .down-section ul li .logo a span:last-child{
+    color: rgb(9, 255, 0);    
+}
